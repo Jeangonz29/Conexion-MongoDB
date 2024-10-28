@@ -1,8 +1,8 @@
 const express = require('express');
-const app = express(); //aqui creo una instancia en app
+const app = express(); //aqui creo una instancia
 const mongoose = require('mongoose');
 require('dotenv').config(); //dotenv es directo
-const port = process.env.PORT ||3000; //aqui defino los puertos, 
+const port = process.env.PORT ||3000; //aqui defino los puertos 
 app.listen(port, ()=> console.log('server listen on port', port)) //
 
 //www.midominio.com
@@ -25,4 +25,4 @@ mongoose
 .connect(process.env.MONGODB_URI)
 .then(()=>console.log('te has conectado a mongodb'))
 .catch((error)=>console.error(error))
- //Aprenderme todocd
+ //Aprenderme todo xd
